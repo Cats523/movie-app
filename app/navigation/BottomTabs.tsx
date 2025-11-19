@@ -37,7 +37,7 @@ export type BottomTabParamList = {
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 const Tab = createBottomTabNavigator<BottomTabParamList>();
 
-// Dashboard Stack (for nested screens like Search & MovieDetail)
+
 const DashboardStack = () => {
   const Stack = createNativeStackNavigator();
 
@@ -125,7 +125,7 @@ const BottomTabs = () => {
   );
 };
 
-// Root Navigator (wraps Tabs + Fullscreen Screens)
+
 const RootNavigator = () => {
   return (
     <RootStack.Navigator screenOptions={{ headerShown: false }}>

@@ -32,11 +32,11 @@ export interface UpcomingMoviesResponse {
 }
 export interface MovieVideo {
   id: string;
-  key: string;          // YouTube video key
+  key: string;
   name: string;
-  site: string;         // "YouTube"
+  site: string;
   size: number;
-  type: string;         // "Trailer", "Teaser", etc.
+  type: string;
 }
 
 export interface MovieVideosResponse {

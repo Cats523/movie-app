@@ -16,16 +16,15 @@ const api = axios.create({
 // Request Interceptor
 api.interceptors.request.use(
   (config) => {
-    // Log requests in dev mode
-    if (__DEV__) {
+
       console.log(`[API Request] ${config.method?.toUpperCase()} ${config.url}`);
-    }
+
     return config;
   },
   (error) => {
-    if (__DEV__) {
+
       console.error('[API Request Error]', error);
-    }
+
     return Promise.reject(error);
   }
 );
@@ -33,18 +32,18 @@ api.interceptors.request.use(
 // Response Interceptor
 api.interceptors.response.use(
   (response: AxiosResponse) => {
-    // Log successful responses in dev mode
-    if (__DEV__) {
+
+
       console.log(`[API Response] ${response.config.url} - Status: ${response.status}`);
-    }
+
     return response;
   },
   (error: AxiosError) => {
-    // Handle and log errors
+
     const apiError = ApiErrorHandler.handle(error);
     logError(apiError, error.config?.url);
 
-    // Attach processed error for easier handling in components
+
     return Promise.reject(apiError);
   }
 );

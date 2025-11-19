@@ -97,7 +97,7 @@ const SearchScreen: React.FC = () => {
             style={{
               width: 16,
               height: 16,
-              tintColor: Colors.black, // recolor PNG if it's pure black
+              tintColor: Colors.black,
             }}
           />
         </TouchableOpacity>
@@ -108,7 +108,7 @@ const SearchScreen: React.FC = () => {
             style={{
               width: 16,
               height: 16,
-              tintColor: Colors.black, // recolor PNG if it's pure black
+              tintColor: Colors.black,
             }}
           />
           <TextInput

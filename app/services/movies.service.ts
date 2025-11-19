@@ -1,6 +1,6 @@
 import api from './api.ts';
 import { MovieVideosResponse, UpcomingMoviesResponse } from './movies.types.ts';
-import { ApiError, ApiErrorHandler } from './api.error';
+import { ApiError } from './api.error';
 
 export const MovieService = {
   getUpcomingMovies: async (): Promise<UpcomingMoviesResponse> => {

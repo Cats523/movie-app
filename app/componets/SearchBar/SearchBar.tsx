@@ -14,7 +14,7 @@ import Colors from '../../theme/colors.ts';
 
 interface SearchHeaderProps {
   onSearchChange: (text: string) => void;
-  navigation: any; // Add navigation prop
+  navigation: any;
 }
 
 const SearchHeader: React.FC<SearchHeaderProps> = ({ onSearchChange, navigation }) => {
